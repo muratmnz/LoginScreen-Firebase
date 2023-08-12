@@ -22,6 +22,7 @@
 		685ADD622A87F4C9001B4DEA /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 685ADD612A87F4C9001B4DEA /* FirebaseRemoteConfig */; };
 		685ADD642A87F4C9001B4DEA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 685ADD632A87F4C9001B4DEA /* FirebaseStorage */; };
 		685ADD662A87F555001B4DEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 685ADD652A87F555001B4DEA /* GoogleService-Info.plist */; };
+		68C7ECFE2A881BF500FEAC96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C7ECFD2A881BF500FEAC96 /* Constants.swift */; };
 		F98994A405E49729D2B89485 /* Pods_LoginScreen_Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F2BB2AA7AF37579EB3BEFC /* Pods_LoginScreen_Firebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		685ADD4C2A7A979C001B4DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		685ADD4E2A7A979C001B4DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		685ADD652A87F555001B4DEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68C7ECFD2A881BF500FEAC96 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		75F2BB2AA7AF37579EB3BEFC /* Pods_LoginScreen_Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginScreen_Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1A8BE74A8D728BDA190AE09 /* Pods-LoginScreen-Firebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen-Firebase.debug.xcconfig"; path = "Target Support Files/Pods-LoginScreen-Firebase/Pods-LoginScreen-Firebase.debug.xcconfig"; sourceTree = "<group>"; };
 		FA4092670FDCD3B75F1B6D40 /* Pods-LoginScreen-Firebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginScreen-Firebase.release.xcconfig"; path = "Target Support Files/Pods-LoginScreen-Firebase/Pods-LoginScreen-Firebase.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				685ADD492A7A979C001B4DEA /* Assets.xcassets */,
 				685ADD4B2A7A979C001B4DEA /* LaunchScreen.storyboard */,
 				685ADD4E2A7A979C001B4DEA /* Info.plist */,
+				68C7ECFD2A881BF500FEAC96 /* Constants.swift */,
 			);
 			path = "LoginScreen-Firebase";
 			sourceTree = "<group>";
@@ -107,7 +110,6 @@
 				F1A8BE74A8D728BDA190AE09 /* Pods-LoginScreen-Firebase.debug.xcconfig */,
 				FA4092670FDCD3B75F1B6D40 /* Pods-LoginScreen-Firebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -225,6 +227,7 @@
 				685ADD452A7A979A001B4DEA /* ViewController.swift in Sources */,
 				685ADD412A7A979A001B4DEA /* AppDelegate.swift in Sources */,
 				685ADD432A7A979A001B4DEA /* SceneDelegate.swift in Sources */,
+				68C7ECFE2A881BF500FEAC96 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
