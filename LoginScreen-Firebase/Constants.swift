@@ -7,4 +7,7 @@
 
 struct C {
     static let loginSegue = "loginSegue"
+    static let loginPageSegue = "loginPageSegue"
+    static let registerPageSegue = "registerPageSegue"
+    static let registerSegue = "registerSegue"
 }

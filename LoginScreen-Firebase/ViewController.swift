@@ -38,7 +38,5 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func pressRegister(_ sender: UIButton) {
-    }
 }
 
