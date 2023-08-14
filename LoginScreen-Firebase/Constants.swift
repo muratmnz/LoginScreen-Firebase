@@ -10,4 +10,5 @@ struct C {
     static let loginPageSegue = "loginPageSegue"
     static let registerPageSegue = "registerPageSegue"
     static let registerSegue = "registerSegue"
+    static let appName = "Login&Register"
 }

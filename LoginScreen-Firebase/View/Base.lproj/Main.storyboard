@@ -71,6 +71,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssx-wk-8NK">
                                 <rect key="frame" x="163.66666666666666" y="491" width="66" height="35"/>
+                                <color key="tintColor" red="0.92156863209999995" green="0.6549019814" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                 <connections>
@@ -132,35 +133,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6hH-8y-gGF">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6hH-8y-gGF">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djy-A3-TMo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djy-A3-TMo">
                                 <rect key="frame" x="16" y="406" width="361" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96862745289999996" green="0.88627451660000001" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="rxR-o3-oFf"/>
+                                </constraints>
+                                <color key="tintColor" red="0.92156863209999995" green="0.6549019814" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Log In"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="YnS-TK-I9Q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ml8-6a-fT0">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ml8-6a-fT0">
                                 <rect key="frame" x="16" y="478" width="361" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96862745289999996" green="0.88627451660000001" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.92156863209999995" green="0.6549019814" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Register"/>
                                 <connections>
                                     <segue destination="x3m-g0-IMT" kind="show" id="mdS-gP-xNx"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAn-87-6J7" userLabel="titleLabel" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                <rect key="frame" x="92" y="196" width="209" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="ELS-mt-1r4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.92156863209999995" green="0.6549019814" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Coe-th-TRe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="djy-A3-TMo" firstAttribute="leading" secondItem="KqM-5E-uGc" secondAttribute="leadingMargin" id="AaR-gJ-ACJ"/>
+                            <constraint firstItem="CAn-87-6J7" firstAttribute="centerX" secondItem="Ml8-6a-fT0" secondAttribute="centerX" id="DDh-sJ-xIk"/>
+                            <constraint firstItem="djy-A3-TMo" firstAttribute="leading" secondItem="Ml8-6a-fT0" secondAttribute="leading" id="Jr3-AK-jOq"/>
+                            <constraint firstItem="djy-A3-TMo" firstAttribute="top" secondItem="KqM-5E-uGc" secondAttribute="top" constant="406" id="OjK-8x-A7D"/>
+                            <constraint firstItem="CAn-87-6J7" firstAttribute="centerX" secondItem="djy-A3-TMo" secondAttribute="centerX" id="Uk6-VQ-6r9"/>
+                            <constraint firstItem="6hH-8y-gGF" firstAttribute="leading" secondItem="Coe-th-TRe" secondAttribute="leading" id="ZG5-oU-TPj"/>
+                            <constraint firstItem="CAn-87-6J7" firstAttribute="top" secondItem="Coe-th-TRe" secondAttribute="top" constant="93" id="agP-r4-SuB"/>
+                            <constraint firstItem="6hH-8y-gGF" firstAttribute="centerY" secondItem="KqM-5E-uGc" secondAttribute="centerY" id="atn-JW-KSS"/>
+                            <constraint firstItem="CAn-87-6J7" firstAttribute="centerX" secondItem="6hH-8y-gGF" secondAttribute="centerX" id="eOw-e5-8Nu"/>
+                            <constraint firstItem="CAn-87-6J7" firstAttribute="centerX" secondItem="KqM-5E-uGc" secondAttribute="centerX" id="gbJ-A8-o8Z"/>
+                            <constraint firstItem="CAn-87-6J7" firstAttribute="leading" secondItem="Coe-th-TRe" secondAttribute="leading" constant="92" id="hZy-qA-mgT"/>
+                            <constraint firstItem="Ml8-6a-fT0" firstAttribute="top" secondItem="djy-A3-TMo" secondAttribute="bottom" constant="27" id="u01-cc-Vzf"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="6hH-8y-gGF" secondAttribute="bottom" constant="-34" id="udZ-qB-tfu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rOF-w0-49z"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="CAn-87-6J7" id="QMQ-BB-hLh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2de-nc-gZy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,6 +237,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hf6-lv-fSX">
                                 <rect key="frame" x="153" y="531" width="87" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.92156863209999995" green="0.6549019814" blue="0.65098041299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Register"/>
                                 <connections>
@@ -256,7 +287,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="dRX-jp-wsK"/>
+        <segue reference="tbJ-DL-FML"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="loginBackground" width="3648" height="5472"/>
