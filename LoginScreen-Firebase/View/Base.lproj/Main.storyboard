@@ -209,6 +209,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                                <connections>
+                                    <action selector="pressRegister:" destination="x3m-g0-IMT" eventType="touchUpInside" id="96a-4b-gsI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4o-ax-ndh">
                                 <rect key="frame" x="125" y="204" width="142" height="26"/>
@@ -224,6 +227,8 @@
                     <tabBarItem key="tabBarItem" title="Item" id="mzm-BY-rCd"/>
                     <navigationItem key="navigationItem" id="ixh-dP-gnF"/>
                     <connections>
+                        <outlet property="passTextField" destination="5at-Jf-0mG" id="dWI-yf-fIV"/>
+                        <outlet property="usernameTextField" destination="1e8-Yx-HlM" id="CHG-oR-qxQ"/>
                         <segue destination="SKG-aw-Pzk" kind="show" identifier="registerSegue" id="dRX-jp-wsK"/>
                     </connections>
                 </viewController>
